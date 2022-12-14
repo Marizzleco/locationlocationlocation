@@ -1,0 +1,23 @@
+{
+  "name": "locationlocationlocation",
+  "version": "1.0.0",
+  "description": "This function will be called with an array of objects, each object representing a student on the Northcoders bootcamp. Some of the students have a specified location property which is a string of the office they will be attending during their time on the course, but for some students that property is missing.",
+  "main": "location.index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marizzleco/locationlocationlocation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marizzleco/locationlocationlocation/issues"
+  },
+  "homepage": "https://github.com/Marizzleco/locationlocationlocation#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
