@@ -1,6 +1,4 @@
 
-
-
 const updateRemoteStudents = require("../location.index");
 
 describe("updateRemoteStudents", () => {
@@ -43,6 +41,20 @@ describe("updateRemoteStudents", () => {
         { name: "Paul", location: "Manchester" },
         { name: 'Ali', location: 'remote'}
       ]);
+    })
+    test.only("does not change original input", () => {
+      //arrange
+      const input =  [{ name: "Paul", location: "Manchester" },
+      { name: 'Ali', }]
+      const testUpdate = updateRemoteStudents([
+      { name: "Paul", location: "Manchester" },
+      { name: 'Ali', }]
+      );
+        //act
+      let result = testUpdate;
+      //assert
+      expect(input).toEqual([ { name: "Paul", location: "Manchester" },
+      { name: 'Ali', }]);
     })
 
 })
